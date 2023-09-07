@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja}">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
+    <meta charset="UTF-8">
+    <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0,
         maximum-scale=1.0, minimum-scale=1.0"
-  >
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ツイート機能</title>
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ツイート機能</title>
 </head>
 <body>
-  <h1>ツイート機能</h1>
-  <p>{{ $name }}</p>
+    <h1>ツイート機能</h1>
+    <div>
+    @foreach ($tweets as $tweet)
+        <p>{{ $tweet->content }}</p>
+    @endforeach
+    </div>
 </body>
 </html>

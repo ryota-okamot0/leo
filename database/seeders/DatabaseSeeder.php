@@ -23,6 +23,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call([TweetSeeder::class]);
+        $this->call([TweetsSeeder::class]);
     }
 }
