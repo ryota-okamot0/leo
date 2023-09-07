@@ -7,6 +7,12 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Settings
+
+```
+curl -s "https://laravel.build/leo?php=81" | bash
+```
+
 ## URL
 
 http://localhost/
