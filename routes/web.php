@@ -22,4 +22,9 @@ Route::get('/', function () {
 | Tweet
 |--------------------------------------------------------------------------
 */
-Route::get('tweet', \App\Http\Controllers\Tweet\IndexController::class);
+// 初期表示
+Route::get('tweet', \App\Http\Controllers\Tweet\IndexController::class)
+    ->name('tweet.index');
+// 登録
+Route::post('tweet/create', \App\Http\Controllers\Tweet\CreateController::class)
+    ->name('tweet.create');

@@ -28,6 +28,6 @@ class IndexController extends Controller
     public function __invoke(Request $request)
     {
         return view('tweet.index')
-            ->with('tweets', Tweet::all());
+            ->with('tweets', Tweet::orderBy('created_at', 'DESC')->get());
     }
 }
